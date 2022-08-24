@@ -1,0 +1,35 @@
+.week1 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 13px;
+}
+.week2 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 13px;
+}
+.week3 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 13px;
+}
+.week4 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 13px;
+}
+.week5 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 13px;
+}
+
+.emojiweek {
+  font-size: 19px;
+  color: gray;
+}
