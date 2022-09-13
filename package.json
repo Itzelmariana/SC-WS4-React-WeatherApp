@@ -19,6 +19,7 @@
     "typescript": "4.1.3"
   },
   "scripts": {
+    "build": "react-scripts build",
     "start": "react-scripts start",
     "install:client": "npm install",
     "start:client": "npm start"
