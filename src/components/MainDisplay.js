@@ -9,7 +9,7 @@ export default function MainDisplay(props) {
   return (
     <div className='MainDisplay'>
       <div className='row'>
-        <div className='col-4'>
+        <div className='col-sm-12 col-md-4 text-center'>
           <h2 className='displayCity'>{props.data.city}</h2>
           <div className='detailsmain'>
             <FormattedDate date={props.data.date} />
@@ -18,14 +18,14 @@ export default function MainDisplay(props) {
             {props.data.description}
           </div>
         </div>
-        <div className='col-2 emojimain'>
+        <div className='col-sm-6 col-md-2 emojimain text-center'>
           <WeatherIcon code={props.data.icon} size={52} />
         </div>
-        <div className='col-3 tempeturemain'>
+        <div className='col-sm-3 col-md-3 tempeturemain text-center'>
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
 
-        <div className='col-3 detailsmain'>
+        <div className='col-sm-12 col-md-3 detailsmain text-center'>
           <div>Wind: {props.data.humidity}km/h</div>
           <div>Humidity: {props.data.wind}%</div>
         </div>

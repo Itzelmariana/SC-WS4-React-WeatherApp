@@ -7,3 +7,9 @@
   margin-top: 25px;
   margin-bottom: 12px;
 }
+.forecastTempMin {
+  color: gray;
+}
+.forecastTemps {
+  font-size: 15px;
+}

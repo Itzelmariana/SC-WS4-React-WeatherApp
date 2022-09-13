@@ -40,11 +40,22 @@ export default function InputCity(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
+
+  function searchLocation(position) {
+    const apiKey = '2a980a820d1b255b9609b3f0f671cc24';
+    let apiUrl2 = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl2).then(handleResponse);
+  }
+
   if (weatherData.ready) {
     return (
       <div className='InputCity'>
         <div className='row mb-3'>
-          <div className='col-11'>
+          <div className=' col-11'>
             <form onSubmit={handleSubmit}>
               <input
                 type='search'
@@ -60,9 +71,9 @@ export default function InputCity(props) {
               </button>
             </form>
           </div>
-          <div className='col-1 myBtn'>
+          <div className=' col-1 myBtn'>
             <button className='mylocation'>
-              <span role='img' aria-label=''>
+              <span role='img' aria-label='' onClick={getCurrentLocation}>
                 📍
               </span>
             </button>
