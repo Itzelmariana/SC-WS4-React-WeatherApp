@@ -1,0 +1,37 @@
+.InputCity {
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+.entercity {
+  border-right: none;
+  border-bottom: 1px solid rgb(128, 128, 128, 0.6);
+  border-top: 1px solid rgb(128, 128, 128, 0.6);
+  border-left: 1px solid rgb(128, 128, 128, 0.6);
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.InputCity form {
+  text-align: right;
+}
+.search {
+  background: none;
+  border-left: none;
+  border-bottom: 1px solid rgb(128, 128, 128, 0.6);
+  border-top: 1px solid rgb(128, 128, 128, 0.6);
+  border-right: 1px solid rgb(128, 128, 128, 0.6);
+  margin-left: -5px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.mylocation {
+  background: none;
+  border: 1px solid rgb(128, 128, 128, 0.6);
+  border-radius: 8px;
+}
+.InputCity .myBtn {
+  margin-left: -20px;
+}
+.mylocation:hover {
+  cursor: pointer;
+  background: whitesmoke;
+}

@@ -1,0 +1,19 @@
+.MainDisplay {
+  border-right: none;
+  border: 1px solid rgb(128, 128, 128, 0.6);
+  border-radius: 14px;
+  padding: 12px;
+}
+.detailsmain {
+  font-size: 15px;
+}
+.temperature {
+  font-size: 40px;
+}
+.unit {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.emojimain {
+  margin-top: 10px;
+}
