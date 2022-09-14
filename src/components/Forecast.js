@@ -5,6 +5,7 @@ import WeatherForecastDay from './WeatherForecastDay';
 import './Forecast.css';
 
 export default function Forecast(props) {
+  const unit = props.unit;
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
@@ -34,7 +35,7 @@ export default function Forecast(props) {
             if (index < 5) {
               return (
                 <div className='col weeks' key={index}>
-                  <WeatherForecastDay data={dailyForecast} />
+                  <WeatherForecastDay unit={unit} data={dailyForecast} />
                 </div>
               );
             } else {

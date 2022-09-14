@@ -8,6 +8,7 @@ import Footer from './Footer';
 import './InputCity.css';
 
 export default function InputCity(props) {
+  const [unit, setUnit] = useState('celsius');
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
@@ -79,8 +80,8 @@ export default function InputCity(props) {
             </button>
           </div>
         </div>
-        <MainDisplay data={weatherData} />
-        <Forecast coordinates={weatherData.coordinates} />
+        <MainDisplay data={weatherData} unit={unit} setUnit={setUnit} />
+        <Forecast unit={unit} coordinates={weatherData.coordinates} />
         <hr />
         <Footer />
       </div>

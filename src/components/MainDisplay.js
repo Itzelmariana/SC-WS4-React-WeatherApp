@@ -6,6 +6,9 @@ import WeatherTemperature from './WeatherTemperature';
 import './MainDisplay.css';
 
 export default function MainDisplay(props) {
+  const unit = props.unit;
+  const setUnit = props.setUnit;
+
   return (
     <div className='MainDisplay'>
       <div className='row'>
@@ -22,7 +25,11 @@ export default function MainDisplay(props) {
           <WeatherIcon code={props.data.icon} size={52} />
         </div>
         <div className='col-sm-3 col-md-3 tempeturemain text-center'>
-          <WeatherTemperature celsius={props.data.temperature} />
+          <WeatherTemperature
+            unit={unit}
+            setUnit={setUnit}
+            celsius={props.data.temperature}
+          />
         </div>
 
         <div className='col-sm-12 col-md-3 detailsmain text-center'>
