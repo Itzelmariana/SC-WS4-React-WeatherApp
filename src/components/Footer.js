@@ -6,8 +6,9 @@ export default function Footer() {
   return (
     <footer>
       <a
-        href='https://github.com/Itzelmariana/01-my-first-weather-app'
-        target='blank'
+        href='https://github.com/Itzelmariana/SC-WS4-React-WeatherApp'
+        target='_blank'
+        rel='noopener noreferrer'
       >
         Open source code{' '}
       </a>
