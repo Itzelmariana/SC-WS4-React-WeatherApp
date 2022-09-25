@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import InputCity from './components/InputCity';
 import './App.css';
 
