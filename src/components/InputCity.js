@@ -54,7 +54,7 @@ export default function InputCity(props) {
 
   if (weatherData.ready) {
     return (
-      <div className='InputCity'>
+      <div className='InputCity container'>
         <div className='row mb-3'>
           <div className=' col-11'>
             <form onSubmit={handleSubmit}>
