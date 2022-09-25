@@ -6,7 +6,7 @@ import './App.css';
 
 export default function App() {
   return (
-    <div className=' App container'>
+    <div className=' App'>
       <div className='Frame container'>
         <InputCity defaultCity='New York' />
       </div>
